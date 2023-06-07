@@ -1,46 +1,65 @@
+body {
+    margin: 0;
+}
+
 .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 110px;
+    padding: 25px 174px 23px 161px;
+    box-sizing: border-box;
     background: #F3F7EF;
     box-shadow: 0 1px 14px rgba(0, 0, 0, 0.12);
 }
-ul {
-    display: flex;
-    list-style: none;
-}
-a {
-    text-decoration: none;
-    color: black;
-}
-main {
-    background-color: antiquewhite;
-}
-h1 {
-    color: #C71585;
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-}
-.wiki {
-    display: flex;
-    justify-content: center;
-    text-decoration: none;
-    color: #C71585;
-}
-footer {
-    height: 100px;
-    background-color: #00FF00;
-    margin-top: 30px;
-}
-.two {
-    display: flex;
-    justify-content: center;
+
+.logo {
+    width: 61px;
+    height: 62px;
+    flex-shrink: 0;
 }
 
-p {
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
     display: flex;
-    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    margin-right: 69px;
+}
+
+.item-two {
+    margin-right: 78px;
+}
+
+.item:last-child {
+    margin: 0;
+
+}
+
+.link {
+    color: #2F2A37;
+    font-family: 'Tahoma', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration: none;
+}
+
+.selector {
+    width: 47px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.selector img {
+    width: 100%;
+    height: 100%;
 }
