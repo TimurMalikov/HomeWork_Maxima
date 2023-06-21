@@ -166,11 +166,3 @@ header{
     font-size: 20px;
     line-height: 120%;
 }
-
-.ellipse {
-    position: absolute;
-    top: -200px;
-    left: 1000px;
-    width: 821px;
-    height: 821px;
-}
