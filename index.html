@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ED SPACE</title>
+    <link rel="stylesheet" href="./CSS/fonts.css">
     <link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
 <header>
-    <div class="wrapper">
+    <div class="head-wrapper">
         <div class="logo">
-            <img src="./Images/logo_EdSpase.png" alt="Ed_Space_logo">
+            <img src="./images/logo_EdSpase.png" alt="Ed_Space_logo">
         </div>
         <nav class="nav_bar">
             <ul class="menu">
@@ -27,20 +28,28 @@
             </ul>
         </nav>
         <div class="selector">
-            <img src="Images/languages.png" alt="languages">
+            <div class="select-wrapper">
+                <select name="select-lang" class="select">
+                    <option value="Russian">RU</option>
+                    <option value="English">EN</option>
+                    <option value="French">FR</option>
+                </select>
+            </div>
         </div>
     </div>
 </header>
-<!--<main>-->
-<!--    <h1>Заголовок h1</h1>-->
-<!--    <h2 class="two">Подзаголовок h2</h2>-->
-<!--    <h3>Подзаголовок h3</h3>-->
-<!--    <h4>Подзаголовок h4</h4>-->
-<!--    <h5>Подзаголовок h5</h5>-->
-<!--    <h6>Подзаголовок h6</h6>-->
-<!--    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat eaque sequi nesciunt culpa, voluptas quas!</p>-->
-<!--    <a href="https://ru.wikipedia.org/wiki/Заглавная_страница" target="_blank" class="wiki">Википедия</a>-->
-<!--</main>-->
+<main>
+    <div class="main-wrapper">
+        <div class="content">
+            <h1 class="tagline">Ed Space <br> Ваши знания <br> и экспертность обретут здесь форму</h1>
+            <p class="description">Мощный инструмент для организации обучения. Ваши ученики будут в восторге!</p>
+            <button class="action">Попробовать бесплатно</button>
+        </div>
+        <div class="style-back">
+            <!--<img src="./images/frame.png" alt="image">-->
+        </div>
+    </div>
+</main>
 <!--<footer>Подвал</footer>-->
 </body>
 </html>

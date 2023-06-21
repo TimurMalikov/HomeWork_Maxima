@@ -2,13 +2,20 @@ body {
     margin: 0;
 }
 
-.wrapper {
+header{
+    background: #F3F7EF;
+    max-width: 1555px;
+    width: 100%;
+    margin: 0 auto; /*ЦЕНТРИРУЕТ ЭЛЕМЕНТ*/
+    position: relative;
+}
+
+.head-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 174px 23px 161px;
     box-sizing: border-box;
-    background: #F3F7EF;
+    padding: 25px 174px 23px 161px;
     box-shadow: 0 1px 14px rgba(0, 0, 0, 0.12);
 }
 
@@ -54,12 +61,116 @@ body {
 }
 
 .selector {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
     width: 47px;
     height: 22px;
-    flex-shrink: 0;
 }
 
-.selector img {
+.select {
+    background: transparent; /*ПРОЗРАЧНЫЙ ФОН*/
+    font-size: 18px;
+    width: 47px;
+    border: none;   /*УБИРАЕТ ГРАНИЦУ СЕЛЕТОРА*/
+    outline: none;  /*УБИРАЕТ БРАУЗЕРНУЮ ОБВОДКУ ПРИ КЛИКЕ*/
+    cursor: pointer;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.select::-ms-expand {  /*УБИРАЕТ СТРЕЛКУ В IE 10/11*/
+    display: none;
+}
+
+.select-wrapper::before {
+    content: "";
+    position: absolute;
+    box-sizing: border-box;
+    width: 12px;
+    height: 7px;
+    top: 30%;
+    background: url("../images/vector.png") no-repeat;
+    background-size: cover;
+    margin-left: 35px;
+    pointer-events: none;
+}
+
+.select-wrapper {
+    position: relative;
+}
+
+.main-wrapper {
+    position: center;
+    z-index: -1;
+    background: #F3F7EF;
+    display: flex;
+    justify-content: center;
+    max-width: 1555px;
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+}
+
+.style-back {
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    background-image: url("../images/frame.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 721px;
+    margin: 186px 104px 162px 137px;
+}
+
+.content {
+    box-sizing: border-box;
+    width: 434px;
+    margin-left: 159px;
+    padding-top: 127px;
+}
+
+.action {
+    width: 245px;
+    height: 55px;
+    margin-bottom: 97px;
+    color: #2F2A37;
+    background: linear-gradient(92.02deg, #6BFFCA 13.34%, #00FF47 129.97%);
+    border-radius: 40px;
+    border: none;
+    font-family: 'Avenir Medium', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+}
+
+.tagline {
+    color: #2F2A37;
+    margin: 0;
+    font-family: 'Avenir Bold', sans-serif;
+    font-style: normal;
+    font-size: 54px;
+    line-height: 115%;
+}
+
+.description {
+    color: #6E6C72;
+    padding-top: 31px;
+    padding-bottom: 55px;
+    margin: 0;
+    font-family: 'Avenir Regular', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+}
+
+.ellipse {
+    position: absolute;
+    top: -200px;
+    left: 1000px;
+    width: 821px;
+    height: 821px;
 }

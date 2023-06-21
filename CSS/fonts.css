@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Avenir Heavy";
+    src: local("Avenir Heavy"),
+    local("Avenir-Heavy"),
+    url("../font/Avenir-Heavy/AvenirNextCyr-Heavy.woff2") format("woff2"),
+    url("../font/Avenir-Heavy/AvenirNextCyr-Heavy.woff") format("woff");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Avenir Medium";
+    src: local("Avenir Medium"),
+    local("Avenir-Medium"),
+    url("../font/Avenir-Medium/AvenirNextCyr-Medium.woff2") format("woff2"),
+    url("../font/Avenir-Medium/AvenirNextCyr-Medium.woff") format("woff");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Avenir Regular";
+    src: local("Avenir Regular"),
+    local("Avenir-Regular"),
+    url("../font/Avenir-Regular/AvenirNextCyr-Regular.woff2") format("woff2"),
+    url("../font/Avenir-Regular/AvenirNextCyr-Regular.woff") format("woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Avenir Bold";
+    src: local("Avenir Bold"),
+    local("Avenir-Bold"),
+    url("../font/Avenir-Bold/AvenirNextCyr-Bold.woff2") format("woff2"),
+    url("../font/Avenir-Bold/AvenirNextCyr-Bold.woff") format("woff");
+    font-weight: bold;
+}
+
